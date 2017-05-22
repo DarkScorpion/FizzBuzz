@@ -1,50 +1,50 @@
 'use strict';
-var assert = require('assert');
 var fizzBuzz = require('../fizzBuzz.js');
+var deepEqual = require('assert').deepEqual;
 
 var _f = 'fizz';
 var _b = 'buzz';
-var _fb = _f+_b;
+var _fb = _f + _b;
 
 describe('Fizz Buzz', () => {
   it('Test 0', () => {
-    var arr = [0];
-    assert.deepEqual( fizzBuzz(0), arr );
+    var arr = [ 0 ];
+    deepEqual( fizzBuzz(0), arr );
   });
 
    it('Test 43', () => {
-    var arr = [43];
-    assert.deepEqual( fizzBuzz(43), arr );
+    var arr = [ 43 ];
+    deepEqual( fizzBuzz(43), arr );
   });
 
   it('Test 75', () => {
-    var arr = [_fb];
-    assert.deepEqual( fizzBuzz(75), arr );
+    var arr = [ _fb ];
+    deepEqual( fizzBuzz(75), arr );
   });
 
   it('Test 100', () => {
-    var arr = [_b];
-    assert.deepEqual( fizzBuzz(100), arr );
+    var arr = [ _b ];
+    deepEqual( fizzBuzz(100), arr );
   });
 
   it('From 1 to 5', () => {
-    var arr = [1, 2, _f, 4, _b];
-    assert.deepEqual( fizzBuzz(1, 5), arr );
+    var arr = [ 1, 2, _f, 4, _b ];
+    deepEqual( fizzBuzz(1, 5), arr );
   });
 
   it('From 14 to 21', () => {
-    var arr = [14, _fb, 16, 17, _f, 19, _b, _f];
-    assert.deepEqual( fizzBuzz(14, 21), arr );
+    var arr = [ 14, _fb, 16, 17, _f, 19, _b, _f ];
+    deepEqual( fizzBuzz(14, 21), arr );
   });
 
   it('From 55 to 60', () => {
-    var arr = [_b, 56, _f, 58, 59, _fb];
-    assert.deepEqual( fizzBuzz(55, 60), arr );
+    var arr = [ _b, 56, _f, 58, 59, _fb ];
+    deepEqual( fizzBuzz(55, 60), arr );
   });
 
   it('From 95 to 99', () => {
-    var arr = [_b, _f, 97, 98, _f];
-    assert.deepEqual( fizzBuzz(95, 99), arr );
+    var arr = [ _b, _f, 97, 98, _f ];
+    deepEqual( fizzBuzz(95, 99), arr );
   });
 
   it('From 1 to 100', () => {
@@ -57,7 +57,7 @@ describe('Fizz Buzz', () => {
       76, 77, _f, 79, _b, _f, 82, 83, _f, _b, 86, _f, 88, 89, _fb,
       91, 92, _f, 94, _b, _f, 97, 98, _f, _b
     ];
-    assert.deepEqual( fizzBuzz(1, 100), benchmarkArray );
+    deepEqual( fizzBuzz(1, 100), benchmarkArray );
   });
 
 });
