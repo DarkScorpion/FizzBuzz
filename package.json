@@ -1,0 +1,26 @@
+{
+  "name": "FizzBuzz",
+  "version": "1.0.0",
+  "description": "My version of the solution Fizz Buzz task. Uploaded with tests to check for other solutions.",
+  "main": "fizzBuzz.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "Alex Smith <iqwz@ya.ru>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DarkScorpion/FizzBuzz.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DarkScorpion/FizzBuzz/issues"
+  },
+  "homepage": "https://github.com/DarkScorpion/FizzBuzz"
+}
